@@ -11,7 +11,6 @@ function App() {
 
   const API = "https://jsonplaceholder.typicode.com/todos?_limit=10";
 
-  // загрузка с API только если пусто
   useEffect(() => {
     if (todos.length === 0) {
       fetch(API)
@@ -28,7 +27,6 @@ function App() {
     }
   }, []);
 
-  // localStorage (ОСТАВИЛ ОДИН — убрал дубль)
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);

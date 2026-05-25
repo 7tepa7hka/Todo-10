@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
 
 function TodoForm({ addTask }) {
   const [userInput, setUserInput] = useState("");
