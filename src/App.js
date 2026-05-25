@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
-  }, [todos]);
+  }, []);
 
   const addTask = (userInput) => {
     if (userInput) {
@@ -52,7 +52,7 @@ function App() {
           setTodos(formattedTodos);
         });
     }
-  }, []);
+  });
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
