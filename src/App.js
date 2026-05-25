@@ -25,7 +25,7 @@ function App() {
           setTodos(formatted);
         });
     }
-  }, []);
+  });
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
